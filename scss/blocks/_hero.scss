@@ -1,0 +1,44 @@
+.hero{
+  background-image: url("../images/hero-back1.png");
+  background-size: 1520px 650px;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+
+  &__heading{
+    margin: 0;
+    padding: 0;
+    padding-top: 153px;
+    max-width: 500px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+  }
+
+  &__text-wrapper{
+    margin-top: 40px;
+    max-width: 405px;
+    margin-left: 95px;
+    padding-bottom: 152px;
+  }
+
+  &__desc{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+
+  &__btn:hover{
+    background-color: transparent;
+  }
+}
