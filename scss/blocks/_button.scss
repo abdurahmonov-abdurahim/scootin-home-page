@@ -1,0 +1,23 @@
+//bu yerda buttonlar yashaydi
+
+.site-btn{
+  margin: 0;
+  padding: 0;
+  max-width: 205px;
+  padding: 14px 48px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #FCB72B;
+  border: 3px solid transparent;
+}
+
+.site-btn:hover{
+  color: #FCB72B;
+  border: 3px solid #FCB72B;
+  background-color: #FFFFFF;
+}

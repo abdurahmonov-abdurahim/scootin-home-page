@@ -1,0 +1,55 @@
+// HEADER SECTION
+.header{
+  padding: 22px 0;
+
+  &__container{
+    display: flex;
+    max-width: 1106px;
+    // justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-list{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+    margin-left: 58px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav-item{
+    margin: 0;
+    padding: 0;
+  }
+
+  &__nav-item:nth-child(2){
+    margin: 0 32px;
+  }
+
+  &__nav-link{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+
+  &__nav-link:hover{
+    opacity: 0.8;
+  }
+
+  &__nav-link:active{
+    opacity: 0.4;
+  }
+
+  &__btn{
+    margin-left: auto;
+  }
+}
