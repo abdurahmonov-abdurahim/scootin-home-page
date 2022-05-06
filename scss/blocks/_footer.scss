@@ -1,0 +1,46 @@
+// FOOTER SECTION
+.footer{
+  padding: 35px 0;
+  background: #333A44;
+
+  &__container{
+    display: flex;
+  }
+
+  &__social-set{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__social-item:nth-child(2){
+    margin: 0 24px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+
+  .footer{
+
+    &__container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__nav{
+      margin: 41px 0 85px 0;
+    }
+
+    &__nav-list{
+      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    &__nav-item:nth-child(2){
+      margin: 16px 0;
+    }
+  }
+}
