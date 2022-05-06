@@ -1,1 +1,13 @@
 //bu yerda bizni o'zgaruvchilar yashaydi!
+
+.site-link{
+  text-decoration: none;
+}
+
+.site-link:hover{
+  opacity: 0.8;
+}
+
+.site-link:active{
+  opacity: 0.4;
+}

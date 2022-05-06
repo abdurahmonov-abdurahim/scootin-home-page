@@ -1,0 +1,89 @@
+// DOWNLOAD SECTION
+
+.download{
+  padding: 102px 0;
+  background-image: url("../images/download-back.png");
+  background-repeat: no-repeat;
+  background-size: 1520px 300px;
+  background-position: center;
+
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title{
+    margin: 0;
+    padding: 0;
+    max-width: 415px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+  }
+
+  &__store-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__store-item{
+    margin: 0;
+    padding: 0;
+  }
+
+  &__store-item:nth-child(2){
+    margin-left: 18px;
+  }
+}
+
+@media only screen and (max-width: 993px){
+  .download{
+    padding: 62px 0;
+    background-position: top right;
+    background-size: 1520px 300px;
+
+
+    &__container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title{
+      text-align: center;
+    }
+
+    &__store-list{
+      margin-top: 40px;
+      justify-content: center;
+    }
+
+    &__appstore{
+      width: 114px;
+      height: 40px;
+    }
+
+    &__googleplaystore{
+      width: 130px;
+      height: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .download{
+
+
+    &__title{
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+}

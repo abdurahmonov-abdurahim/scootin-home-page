@@ -1,3 +1,15 @@
+.site-link {
+  text-decoration: none;
+}
+
+.site-link:hover {
+  opacity: 0.8;
+}
+
+.site-link:active {
+  opacity: 0.4;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -489,67 +501,6 @@ img {
       flex-shrink: 0;
 }
 
-.header__logo-link:hover {
-  opacity: 0.8;
-}
-
-.header__logo-link:active {
-  opacity: 0.4;
-}
-
-.header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-}
-
-.header__nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  margin-right: auto;
-  margin-left: 58px;
-}
-
-.header__nav-item {
-  margin: 0;
-  padding: 0;
-}
-
-.header__nav-item:nth-child(2) {
-  margin: 0 32px;
-}
-
-.header__nav-link {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 25px;
-  color: #939CAA;
-}
-
-.header__nav-link:hover {
-  opacity: 0.8;
-}
-
-.header__nav-link:active {
-  opacity: 0.4;
-}
-
 .header__btn {
   margin-left: auto;
 }
@@ -701,6 +652,51 @@ img {
   .header--open .header__btn:hover {
     background-color: transparent;
   }
+}
+
+.site__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.site__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+  margin-left: 58px;
+}
+
+.site__nav-item {
+  margin: 0;
+  padding: 0;
+}
+
+.site__nav-item:nth-child(2) {
+  margin: 0 32px;
+}
+
+.site__nav-link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
 }
 
 .main {
@@ -1012,6 +1008,101 @@ img {
     text-align: center;
     font-size: 15px;
     line-height: 25px;
+  }
+}
+
+.download {
+  padding: 102px 0;
+  background-image: url("../images/download-back.png");
+  background-repeat: no-repeat;
+  background-size: 1520px 300px;
+  background-position: center;
+}
+
+.download__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download__title {
+  margin: 0;
+  padding: 0;
+  max-width: 415px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #FFFFFF;
+}
+
+.download__store-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.download__store-item {
+  margin: 0;
+  padding: 0;
+}
+
+.download__store-item:nth-child(2) {
+  margin-left: 18px;
+}
+
+@media only screen and (max-width: 993px) {
+  .download {
+    padding: 62px 0;
+    background-position: top right;
+    background-size: 1520px 300px;
+  }
+  .download__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .download__title {
+    text-align: center;
+  }
+  .download__store-list {
+    margin-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .download__appstore {
+    width: 114px;
+    height: 40px;
+  }
+  .download__googleplaystore {
+    width: 130px;
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .download__title {
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
