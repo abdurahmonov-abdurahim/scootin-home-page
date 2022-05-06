@@ -8,22 +8,31 @@
 
   &__list {
     display: flex;
-    position: relative;
-    // width: 100%;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    flex-direction: column;
   }
 
   &__item {
     display: flex;
-    position: relative;
     max-width: 1520px;
     width: 100%;
     margin: 0;
     padding: 0;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__item:nth-child(2){
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: 155px 0;
+  }
+
+  &__text-box{
+    padding: 0;
+    padding-right: 165px;
   }
 
   &__text-wrapper {
@@ -78,6 +87,10 @@
     &__text-wrapper{
       padding-left: 100px;
     }
+
+    &__text-box{
+      padding-right: 100px;
+    }
   }
 }
 
@@ -90,8 +103,16 @@
       padding-left: 50px;
     }
 
+    &__text-box{
+      padding-right: 50px;
+    }
+
     &__img{
       margin-left: auto;
+    }
+
+    &__img-second{
+      margin-right: auto;
     }
   }
 }
@@ -101,15 +122,28 @@
   .chance{
 
 
-    &__container{
-      padding: 0 20px;
-    }
-
     &__item{
       flex-direction: column-reverse;
+      padding-left: 20px;
+    }
+
+    &__item:nth-child(2){
+      margin: 0;
+      flex-direction: column-reverse;
+      margin: 120px 0;
+      padding: 0;
+      padding-right: 20px;
     }
 
     &__text-wrapper{
+      padding-right: 20px;
+      margin-top: 56px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__text-box{
+      padding-left: 20px;
       margin-top: 56px;
       align-items: center;
       justify-content: center;
@@ -137,6 +171,12 @@
 
     &__text-wrapper{
       padding: 0;
+      padding-right: 20px;
+    }
+
+    &__text-box{
+      padding: 0;
+      padding-left: 20px;
     }
 
     &__title{
@@ -153,8 +193,13 @@
       display: none;
     }
 
+    &__img-second{
+      display: none;
+    }
+
     &__img-mobile{
       display: inline-block;
+      margin-left: auto;
     }
   }
 }
