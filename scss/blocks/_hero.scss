@@ -42,3 +42,45 @@
     background-color: transparent;
   }
 }
+
+@media only screen and (max-width: 1090px){
+
+  .hero{
+    background-image: url("../images/tablet-hero-back.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__heading{
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &__text-wrapper{
+      margin: 0 auto;
+      margin-top: 24px;
+      max-width: 573px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 770px){
+
+  .hero{
+    background-image: url("../images/tablet-hero-back.png");
+    background-size: 895px 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 480px){
+
+  .hero{
+    background-image: url("../images/mobile-hero-back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

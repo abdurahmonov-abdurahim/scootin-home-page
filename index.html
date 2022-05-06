@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="./css/main.css">
   <title>Scoot</title>
 </head>
+
+<!-- HEADER -->
 <header class="header">
   <div class="container header__container">
 
-    <img src="./images/scoot.svg" alt="It is site logo" width="108" height="29">
+    <a class="header__logo-link" href="#">
+      <img class="header__logo" src="./images/scoot.svg" alt="It is site logo" width="108" height="29">
+    </a>
 
     <nav class="header__nav">
 
@@ -30,14 +34,20 @@
 
       </ul>
 
+      <button class="header__btn site-btn">Get Scootin</button>
+
     </nav>
 
-    <button class="header__btn site-btn">Get Scootin</button>
+    <button class="header__hamburger"></button>
 
   </div>
 </header>
 
+
+<!-- MAIN -->
 <main class="main">
+
+  <!-- HERO SECTION -->
   <section class="hero">
 
     <div class="container">
@@ -45,18 +55,88 @@
       <h1 class="hero__heading">Scooter sharing made simple</h1>
 
 
-        <div class="hero__text-wrapper">
-          <p class="hero__desc">
-            Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you're away!
-          </p>
+      <div class="hero__text-wrapper">
+        <p class="hero__desc">
+          Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you're away!
+        </p>
 
-          <button class="hero__btn site-btn">Get Scootin</button>
+        <button class="hero__btn site-btn">Get Scootin</button>
 
-        </div>
+      </div>
 
     </div>
 
   </section>
+
+
+  <!-- SERVICES SECTION -->
+  <section class="services">
+
+    <div class="container services__container">
+
+      <ul class="services__list">
+
+        <!-- FIRST OR MOBILE APP -->
+        <li class="services__item">
+
+          <img class="services__img" src="./images/services-img1.svg" alt="local with app on your smartphone" width="96" height="96">
+
+          <div class="services__text-wrapper">
+
+            <h2 class="services__title">Locate with app</h2>
+
+            <p class="services__desc">
+              Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.
+            </p>
+
+          </div>
+
+        </li>
+
+        <!-- SECOND, PICK YOUR SCOOTER -->
+        <li class="services__item">
+
+          <img class="services__img" src="./images/services-img2.svg" alt="pick your scooter" width="96" height="96">
+
+          <div class="services__text-wrapper">
+
+            <h2 class="services__title">Pick your scooter</h2>
+
+            <p class="services__desc">
+              We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.
+            </p>
+
+          </div>
+
+        </li>
+
+        <!-- THIRD, ENJOY THE RIDE -->
+        <li class="services__item">
+
+          <img class="services__img" src="./images/services-img3.svg" alt="enjoy the ride and happy man on scooter" width="96" height="96">
+
+          <div class="services__text-wrapper">
+
+            <h2 class="services__title">Enjoy the ride</h2>
+
+            <p class="services__desc">
+              Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.
+            </p>
+
+          </div>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+
 </main>
+
+<script src="./js/script.js"></script>
+
 </body>
 </html>
