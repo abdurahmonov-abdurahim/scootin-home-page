@@ -1076,6 +1076,10 @@ img {
   padding: 100px 0 329px 0;
 }
 
+.chance__container {
+  max-width: 1520px;
+}
+
 .chance__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1091,6 +1095,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  max-width: 1520px;
+  width: 100%;
   margin: 0;
   padding: 0;
   -webkit-box-pack: justify;
@@ -1102,13 +1108,14 @@ img {
 }
 
 .chance__text-wrapper {
-  margin-right: 90px;
-  max-width: 445px;
+  padding-left: 165px;
 }
 
 .chance__title {
   margin: 0;
   padding: 0;
+  max-width: 445px;
+  width: 100%;
   margin-bottom: 24px;
   font-family: 'Space Mono';
   font-style: normal;
@@ -1120,6 +1127,8 @@ img {
 }
 
 .chance__desc {
+  max-width: 445px;
+  width: 100%;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -1139,9 +1148,75 @@ img {
   text-transform: capitalize;
 }
 
-.chance__img {
-  position: relative;
-  right: -203px;
+.chance__img-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .chance__text-wrapper {
+    padding-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 1095px) {
+  .chance__text-wrapper {
+    padding-left: 50px;
+  }
+  .chance__img {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 1035px) {
+  .chance__container {
+    padding: 0 20px;
+  }
+  .chance__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .chance__text-wrapper {
+    margin-top: 56px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .chance__title {
+    max-width: 573px;
+    text-align: center;
+  }
+  .chance__desc {
+    max-width: 573px;
+    text-align: center;
+  }
+  .chance__link {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .chance__text-wrapper {
+    padding: 0;
+  }
+  .chance__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .chance__desc {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .chance__img {
+    display: none;
+  }
+  .chance__img-mobile {
+    display: inline-block;
+  }
 }
 
 .download {
