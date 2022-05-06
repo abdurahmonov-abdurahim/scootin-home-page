@@ -1072,6 +1072,78 @@ img {
   }
 }
 
+.chance {
+  padding: 100px 0 329px 0;
+}
+
+.chance__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.chance__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chance__text-wrapper {
+  margin-right: 90px;
+  max-width: 445px;
+}
+
+.chance__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.chance__desc {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.chance__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.chance__img {
+  position: relative;
+  right: -203px;
+}
+
 .download {
   padding: 102px 0;
   background-image: url("../images/download-back.png");

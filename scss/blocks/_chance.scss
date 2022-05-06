@@ -1,0 +1,61 @@
+.chance{
+  padding: 100px 0 329px 0;
+
+  &__list {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text-wrapper {
+    margin-right: 90px;
+    max-width: 445px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+  }
+
+  &__desc {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+  }
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  &__img{
+    position: relative;
+    right: -203px;
+  }
+}
